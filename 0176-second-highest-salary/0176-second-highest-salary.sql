@@ -1,6 +1,6 @@
 # Write your MySQL query statement below
 SELECT CASE 
-         WHEN COUNT(etc.salary) >=2 THEN MIN(etc.salary) 
+         WHEN COUNT(salary) >=2 THEN MIN(salary) 
          ELSE NULL
        END AS SecondHighestSalary
 FROM (SELECT DISTINCT salary
